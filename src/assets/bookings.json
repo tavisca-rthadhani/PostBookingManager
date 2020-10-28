@@ -1,0 +1,360 @@
+[
+  {
+    "bookingId": "A0001",
+    "hotelName": "Mariet",
+    "roomName": "Three bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Confirmed",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Sachin",
+        "LastName": "Tendulkar",
+        "Gender": "Male",
+        "age": "50"
+      },
+      {
+        "firstName": "Anjali",
+        "LastName": "Dravid",
+        "Gender": "Tendulkar",
+        "age": "55"
+      },
+      {
+        "firstName": "Arjun",
+        "LastName": "Tendulkar",
+        "Gender": "Male",
+        "age": "25"
+      },
+       {
+        "firstName": "Sara",
+        "LastName": "Tendulkar",
+        "Gender": "Female",
+        "age": "22"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0002",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Confirmed",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Virat",
+        "LastName": "Kohali",
+        "Gender": "Male",
+        "age": "32"
+      },
+      {
+        "firstName": "Anushka",
+        "LastName": "Kohali",
+        "Gender": "Female",
+        "age": "30"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0003",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Booked",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Ramesh",
+        "LastName": "Shimpi",
+        "Gender": "Male",
+        "age": "50"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0004",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Confirmed",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Snjay",
+        "LastName": "Yadav",
+        "Gender": "Male",
+        "age": "39"
+      },
+      {
+        "firstName": "Seema",
+        "LastName": "Yadav",
+        "Gender": "Female",
+        "age": "35"
+      },
+      {
+        "firstName": "Paresh",
+        "LastName": "Yadav",
+        "Gender": "Male",
+        "age": "10"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0005",
+    "hotelName": "Mariet",
+    "roomName": "Two bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Booked",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Ganesh",
+        "LastName": "Deshmukh",
+        "Gender": "Male",
+        "age": "47"
+      },
+      {
+        "firstName": "Ranjana",
+        "LastName": "Deshmukh",
+        "Gender": "Female",
+        "age": "43"
+      },
+      {
+        "firstName": "Kunal",
+        "LastName": "Deshmukh",
+        "Gender": "Male",
+        "age": "16"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0006",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Confirmed",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Sonal",
+        "LastName": "Kapoor",
+        "Gender": "Female",
+        "age": "24"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0007",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Cancelled",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Rahul",
+        "LastName": "Kul",
+        "Gender": "Male",
+        "age": "25"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0008",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Confirmed",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Pravin",
+        "LastName": "Dhage",
+        "Gender": "Male",
+        "age": "38"
+      },
+      {
+        "firstName": "Sangeeta",
+        "LastName": "Dhage",
+        "Gender": "Female",
+        "age": "35"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0009",
+    "hotelName": "Mariet",
+    "roomName": "Three bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Confirmed",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Amol",
+        "LastName": "Kulkarni",
+        "Gender": "Male",
+        "age": "50"
+      },
+      {
+        "firstName": "Roshani",
+        "LastName": "Kulkarni",
+        "Gender": "Female",
+        "age": "45"
+      },
+      {
+        "firstName": "Shree",
+        "LastName": "Kulkarni",
+        "Gender": "Male",
+        "age": "20"
+      }
+    ]
+  },
+  {
+    "bookingId": "A0010",
+    "hotelName": "Mariet",
+    "roomName": "One bed",
+    "checkIn": "23/10/2020",
+    "checkOut": "25/10/2020",
+    "price": 1200,
+    "bookingStatus": "Cancelled",
+    "hotel": {
+      "hotelName": "Mariet",
+      "address1": "MG Building",
+      "address2": "MG Road",
+      "country": "India",
+      "state": "Maharshtra",
+      "city": "Pune",
+      "pincode": "411005",
+      "phone": "02056895626"
+    },
+
+    "customer": [
+      {
+        "firstName": "Rahul",
+        "LastName": "Dravid",
+        "Gender": "Male",
+        "age": "50"
+      },
+      {
+        "firstName": "Seema",
+        "LastName": "Dravid",
+        "Gender": "Female",
+        "age": "45"
+      },
+      {
+        "firstName": "Arnav",
+        "LastName": "Dravid",
+        "Gender": "Male",
+        "age": "12"
+      }
+    ]
+  }
+]
