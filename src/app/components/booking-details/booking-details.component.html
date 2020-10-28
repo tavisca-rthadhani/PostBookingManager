@@ -1,0 +1,170 @@
+<mat-card style="margin: 15px;">
+    <button mat-raised-button color="accent" [routerLink]="['/bookings']">
+    <mat-icon>arrow_back</mat-icon>Back to Bookings
+  </button>
+    <div style="float: right;">
+        <button *ngIf="bookingDetails?.bookingStatus !== 'Cancelled'" mat-raised-button color="warn" (click)="confirmDialog()">
+      <mat-icon>cancel</mat-icon>Cancellation
+    </button>
+        <button style="margin-left: 10px;" mat-raised-button color="primary" (click)="getFlightDetails()">
+      <mat-icon>flight</mat-icon>Flight Status
+    </button>
+    </div>
+</mat-card>
+
+<form fxLayout="column" [formGroup]="bookingForm" novalidate>
+
+    <mat-card class="flight-card" style="margin: 15px;" *ngIf="flightDetails.flightId">
+
+        <mat-card-title>Flight Details</mat-card-title>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Flight #" [value]="flightDetails.flightId">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Flight Name" [value]="flightDetails.flightName">
+            </mat-form-field>
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Departure" [value]="flightDetails.departure">
+            </mat-form-field>
+
+        </div>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="To" [value]="flightDetails.to">
+            </mat-form-field>
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="From" [value]="flightDetails.from">
+            </mat-form-field>
+
+
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Travel Class" [value]="flightDetails.travelClass">
+            </mat-form-field>
+        </div>
+    </mat-card>
+
+    <mat-card style="margin: 15px;">
+
+        <mat-card-title>Booking Details</mat-card-title>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Booking #" formControlName="bookingId">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Hotel Name" formControlName="hotelName">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Room Name" formControlName="roomName">
+            </mat-form-field>
+        </div>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Check-In Date" formControlName="checkIn">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Check-Out Date" formControlName="checkOut">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Price" formControlName="price">
+            </mat-form-field>
+        </div>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Booking Status" formControlName="bookingStatus">
+            </mat-form-field>
+        </div>
+
+    </mat-card>
+
+
+    <mat-card style="margin: 15px;">
+
+        <mat-card-title>Hotel Details</mat-card-title>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Hotel Name" [value]="bookingDetails?.hotel.hotelName">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Address1" [value]="bookingDetails?.hotel.address1">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input matInput [readonly]="true" placeholder="Address2" [value]="bookingDetails?.hotel.address2">
+            </mat-form-field>
+        </div>
+
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Country" [value]="bookingDetails?.hotel.country">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="State" [value]="bookingDetails?.hotel.state">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="City" [value]="bookingDetails?.hotel.city">
+            </mat-form-field>
+        </div>
+        <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Zip" [value]="bookingDetails?.hotel.pincode">
+            </mat-form-field>
+
+            <mat-form-field fxFlex>
+                <input [readonly]="true" matInput placeholder="Phone" [value]="bookingDetails?.hotel.phone">
+            </mat-form-field>
+        </div>
+    </mat-card>
+
+
+    <mat-card style="margin: 15px;">
+
+        <mat-card-title>Guest Details</mat-card-title>
+        <div *ngFor="let guest of bookingDetails?.customer;  index as i" style="padding: 10px;">
+            <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+
+
+                <div class="example-button-container">
+                    <button mat-mini-fab disabled>
+            <mat-label>{{ i + 1 }}</mat-label>
+          </button>
+                </div>
+
+                <mat-form-field fxFlex>
+                    <input [readonly]="true" matInput placeholder="First Name" [value]="guest.firstName">
+                </mat-form-field>
+
+                <mat-form-field fxFlex>
+                    <input [readonly]="true" matInput placeholder="Last Name" [value]="guest.LastName">
+                </mat-form-field>
+
+                <mat-form-field fxFlex>
+                    <input [readonly]="true" matInput placeholder="Gender" [value]="guest.Gender">
+                </mat-form-field>
+                <mat-form-field fxFlex>
+                    <input [readonly]="true" matInput placeholder="Age" [value]="guest.age">
+                </mat-form-field>
+            </div>
+            <mat-divider></mat-divider>
+        </div>
+    </mat-card>
+
+</form>

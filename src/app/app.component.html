@@ -1,0 +1,12 @@
+
+<mat-toolbar color="primary" class="app-header">
+  <div>
+    <a href="#" class="header-title">Post Booking Manager ({{currentApplicationVersion}})</a>
+  </div>
+  <span class="nav-tool-items" *ngIf="authService.isLoggedIn">
+    <a mat-button (click)="authService.SignOut()" routerLinkActive="active">Log out</a>
+  </span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+
